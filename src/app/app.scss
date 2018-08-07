@@ -1,0 +1,177 @@
+.animation {
+  animation: 3s disc 1s forwards;
+}
+.container {
+  background: linear-gradient(#d74976, #4dac90);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+}
+.disc {
+  height: 170px;
+  top: 55%;
+  width: 170px;
+  z-index: 2;
+}
+.disc-2 {
+  height: 170px;
+  top: 5%;
+  width: 170px;
+  z-index: 2;
+}
+.center {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+}
+.guitar-1 {
+  border-radius: 50%;
+  height: 170px;
+  position: absolute;
+  transform: rotate(-180deg);
+  width: 170px;
+  z-index: 2;
+}
+.guitar-2 {
+  border-radius: 50%;
+  filter: blur(30px);
+  height: 150px;
+  position: absolute;
+  top: -40px;
+  width: 150px;
+}
+.guitar-3 {
+  border-radius: 50%;
+  height: 170px;
+  position: absolute;
+  top: 75px;
+  width: 170px;
+  z-index: 2;
+}
+.guitar-4 {
+  border-radius: 50%;
+  filter: blur(30px);
+  height: 150px;
+  position: absolute;
+  top: 136px;
+  width: 150px;
+}
+img {
+  object-fit: cover;
+}
+h1 {
+  color: white;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  position: absolute;
+  top: 25%;
+}
+.point-1 {
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  top: 64px;
+  width: 40px;
+  z-index: 4;
+}
+.point-2{
+  background-color: black;
+  border-radius: 50%;
+  height: 5px;
+  position: absolute;
+  top: 82px;
+  width: 5px;
+  z-index: 6;
+}
+.point-3 {
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  top: 141px;
+  width: 40px;
+  z-index: 4;
+}
+.point-4 {
+  background-color: black;
+  border-radius: 50%;
+  height: 5px;
+  position: absolute;
+  top: 158px;
+  width: 5px;
+  z-index: 6;
+}
+
+// form
+
+button {
+  background-color: #fae1f5;
+  border-radius: 20px;
+  bottom: 0;
+  color: #5e266b;
+  font-size: 17px;
+  height: 40px;
+  width: 230px;
+}
+
+.form-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  z-index: 4;
+}
+
+form {
+  position: relative;
+  top: 53%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  height: 190px;
+}
+
+.input-field-1 {
+  position: absolute;
+  width: 230px;
+  line-height: 30px;
+  top: 0;
+}
+
+.input-field-2 {
+  position: absolute;
+  width: 230px;
+  line-height: 30px;
+  bottom: 80px;
+}
+
+label {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  color: #5e266b;
+  transition: 0.2s all;
+}
+input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  border-bottom: 2px solid #d3d3d3;
+}
+input:focus {
+  border-color: #5e266b;
+}
+input:focus ~ label {
+  top: -20px;
+  color: #5e266b;
+}
+
+@keyframes disc {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-260px) rotate(180deg);
+  }
+}

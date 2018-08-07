@@ -1,0 +1,36 @@
+<div *ngIf="showSplash" class="container">
+  <h1>• PIUSIC •</h1>
+  <div class="animation disc center">
+    <div class="center point-1"></div>
+    <div class="center point-2"></div>
+    <img src="../assets/imgs/pineapple.jpg" alt="guitar" class="guitar-1">
+    <img src="../assets/imgs/pineapple.jpg" alt="guitar-blur" class="guitar-2">
+  </div>
+</div>
+
+<div *ngIf="!showSplash" class="form-container center">
+  <ion-header style="position: absolute; z-index: 2">
+    <ion-toolbar>
+      <ion-title>PIUSIC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="disc-2 center">
+    <div class="center point-3"></div>
+    <div class="center point-4"></div>
+    <img src="../assets/imgs/pineapple.jpg" alt="guitar" class="guitar-3">
+    <img src="../assets/imgs/pineapple.jpg" alt="guitar-blur" class="guitar-4">
+  </div>
+  <form action="" class="center">
+    <div class="center input-field-1">
+      <input type="text" id="username"/>
+      <label for="username">Your Username:</label>
+    </div>
+    <div class="center input-field-2">
+      <input type="text" id="password"/>
+      <label for="password">Your Password:</label>
+    </div>
+    <button class="center">LOGIN</button>
+  </form>
+</div>
+
+<ion-nav [root]="rootPage"></ion-nav>
